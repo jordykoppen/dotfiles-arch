@@ -1,0 +1,28 @@
+[user]
+	name = Jordy Koppen
+	email = jkoppen@deloitte.nl
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+[core]
+    editor = nvim
+[apply]
+    whitespace = nowarn
+[mergetool]
+    keepBackup = false
+[difftool]
+    prompt = false
+[help]
+    autocorrect = 1
+[push]
+    default = simple
+[branch]
+	autosetuprebase = always
+[credential]
+	helper = store
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
