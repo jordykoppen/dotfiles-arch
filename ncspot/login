@@ -1,0 +1,8 @@
+#! /bin/bash
+if pgrep -x "ncspot" >/dev/null; then
+  echo "An instance of ncspot is already running."
+else
+  echo "Launching ncspot on Desktop 2"
+  bspc rule -a "kitty" -o desktop="2" follow=off focus=off
+  kitty -e fish -i -c ncspot &
+fi

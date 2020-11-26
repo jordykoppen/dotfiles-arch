@@ -1,0 +1,2 @@
+export DOTFILES=/home/jordy/dotfiles
+export SXHKD_SHELL='/usr/bin/sh'

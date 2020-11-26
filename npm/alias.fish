@@ -1,0 +1,5 @@
+alias ni="npm install"
+alias nig="npm i -g"
+alias nid="npm install -D"
+alias nui="npm uninstall"
+alias nr="npm run"

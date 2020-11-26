@@ -1,7 +1,13 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export DOTFILES:/home/jordy/dotfiles
-SETUVAR --export EDITOR:nvim
+SETUVAR --export EDITOR:vim
+SETUVAR --export FZF_DEFAULT_COMMAND:rg\x20\x2d\x2dfiles
+SETUVAR --export FZF_DEFAULT_OPTS:\x2dm\x20\x2d\x2dheight\x2050\x25\x20\x2d\x2dborder
+SETUVAR --export N_PREFIX:/home/jordy/n
+SETUVAR --export --path PATH:/home/jordy/n/bin\x1e/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/local/sbin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl
+SETUVAR SXHKD_SHELL:sh
+SETUVAR --export TERMINFO:/usr/share/terminfo
 SETUVAR __fish_initialized:3100
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
@@ -32,3 +38,4 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_user_paths:/home/jordy/n/bin\x1e/home/jordy/\x2efzf/bin

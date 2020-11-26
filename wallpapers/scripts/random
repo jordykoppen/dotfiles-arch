@@ -1,0 +1,7 @@
+#! /bin/fish
+
+set -l WALLPAPER (random choice $DOTFILES/wallpapers/images/*)
+
+ln -sf -v $WALLPAPER $DOTFILES/wallpapers/current
+
+feh --bg-fill $DOTFILES/wallpapers/current

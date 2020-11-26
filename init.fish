@@ -1,5 +1,7 @@
 set -Ux DOTFILES $HOME/dotfiles
 set -Ux EDITOR nvim
+set -Ux N_PREFIX $HOME/n
+set -gx PATH $N_PREFIX/bin $PATH
 
 for file in $DOTFILES/**/init.fish
   echo "Initializing: $file"

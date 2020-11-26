@@ -1,2 +1,2 @@
-alias vi="nvim"
-alias vim="nvim"
+alias v="nvim"
+alias dofi="v $DOTFILES +Startify"

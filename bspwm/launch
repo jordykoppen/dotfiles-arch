@@ -1,0 +1,4 @@
+!# /bin/bash
+
+env &
+$DOTFILES/wallpapers/scripts/random &
