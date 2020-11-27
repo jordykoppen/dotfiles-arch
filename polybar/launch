@@ -1,0 +1,2 @@
+killall polybar
+polybar --config=$DOTFILES/polybar/config.ini example

@@ -10,7 +10,7 @@ noremap   ss :w <CR>
 inoremap  jj <Esc>
 
 " Source Vim config
-nnoremap sv :source $DOTFILES/vim/init.vim<CR>
+noremap so :so $MYVIMRC<CR>
 
 " FZF
 nnoremap <silent> <C-p> :Files<CR>

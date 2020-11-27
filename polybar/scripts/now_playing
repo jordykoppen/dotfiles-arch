@@ -1,0 +1,21 @@
+#!/bin/sh
+
+s=$(playerctl status)
+if [ $? -ne 0 ]
+then
+    echo "Nothing is playing"
+    exit 1
+fi
+
+
+case $s in
+  Playing)
+      echo "%{F#b8cc52}契 $(playerctl metadata artist) - $(playerctl metadata title)"
+      ;;
+  Paused)
+      echo "%{F#243340} $(playerctl metadata artist) - $(playerctl metadata title)"
+      ;;
+  Stopped)
+      echo "%{F#243340}栗$(playerctl metadata artist) - $(playerctl metadata title)"
+      ;;
+esac
