@@ -23,6 +23,9 @@ set re=0
 " TextEdit might fail if hidden is not set.
 set hidden
 
+" use ctrl-c to copy to clipboard register in visual mode
+vnoremap <C-c> "+y
+
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
