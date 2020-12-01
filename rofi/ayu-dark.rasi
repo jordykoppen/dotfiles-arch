@@ -1,0 +1,57 @@
+/**
+ * Ayu Dark theme ported for rofi
+ */
+
+* {
+  accentcolor: #e6b450;
+  backgroundcolor: #0e1419;
+  separatorcolor: transparent;
+  foregroundcolor: #b3b1ad;
+  selectioncolor: #fafafa;
+  
+  background-color: transparent;
+  text-color: @foregroundcolor;
+}
+
+#window {
+  font: "SFMono Nerd Font 16";
+  location: 0;
+  background-color: @backgroundcolor;
+  border-color: @accentcolor;
+  border: 1;
+  border-radius: 0;
+  padding: 16 14;
+  width: 1080;
+}
+
+#element {
+  spacing: 2;
+  padding: 8;
+}
+
+#element.selected.normal {
+  text-color: @selectioncolor;
+}
+
+#element.selected.active {
+  text-color: @selectioncolor;
+}
+
+element-icon {
+  size: 30;
+  padding: 0 10 0 0;
+}
+
+#inputbar {
+  border: none;
+  children: [prompt, entry];
+}
+
+#prompt {
+  color: @accentcolor;
+  padding: 2 8 8;
+}
+
+#entry {
+  padding: 2 8 8;
+}

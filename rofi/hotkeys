@@ -1,8 +1,12 @@
 # program launcher
 super + space
-  rofi -modi drun -show drun
+  rofi -show
 
 # open rofi calculator
 super + u
   rofi -modi calc -show calc
+
+# Alt tab speaks for itself
+alt + Tab
+  rofi -show window -window-thumbnail
 
