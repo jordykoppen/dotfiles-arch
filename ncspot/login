@@ -2,7 +2,9 @@
 if pgrep -x "ncspot" >/dev/null; then
   echo "An instance of ncspot is already running."
 else
-  echo "Launching ncspot on Desktop 2"
-  bspc rule -a "kitty" -o desktop="2" follow=off focus=off
+  echo "Wait for polybar process to prevent overlap"
+  wait 819
+  echo "Launching ncspot on Desktop 4"
+  bspc rule -a "kitty" -o desktop="4" follow=off focus=off
   kitty -e fish -i -c ncspot &
 fi

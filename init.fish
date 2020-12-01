@@ -3,7 +3,7 @@ set -Ux EDITOR nvim
 set -Ux N_PREFIX $HOME/n
 set -gx PATH $N_PREFIX/bin $PATH
 
-for file in $DOTFILES/**/init.fish
+for file in $DOTFILES/**/install.fish
   echo "Initializing: $file"
   fish $file
 end

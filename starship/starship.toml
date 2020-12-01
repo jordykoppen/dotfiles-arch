@@ -4,4 +4,4 @@ scan_timeout = 2
 
 [character]      # The name of the module we are configuring is "character"
 vicmd_symbol   = "[](bold blue)"
-success_symbol = "[❯](bold green)"
+success_symbol = "[](bold green)"
