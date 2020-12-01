@@ -28,5 +28,3 @@ augroup startify_map
   autocmd FileType startify nnoremap <buffer> <F2> <Nop>
   autocmd FileType startify setl nowrap
 augroup END
-
-autocmd VimEnter * Startify
