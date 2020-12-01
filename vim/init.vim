@@ -10,12 +10,16 @@ colorscheme ayu
 
 set relativenumber
 set nowrap
+set noshowmode
 
 set smarttab
 set cindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" Remove tilde on empty lines
+let &fcs='eob: '
 
 " Old regexp engine will incur performance issues for yats and old engine is usually turned on by other plugins.
 set re=0
@@ -49,17 +53,23 @@ else
   set signcolumn=yes
 endif
 
-" function! RipgrepFzf(query, fullscreen)
-"   let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case -- %s || true'
-"   let initial_command = printf(command_fmt, shellescape(a:query))
-"   let reload_command = printf(command_fmt, '{q}')
-"   let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
-"   call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
-" endfunction
-" 
-" command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
-
 let g:fzf_layout = { 'down': '~20%' }
+
+let g:lightline = {
+  \ 'colorscheme': 'ayu'
+  \ }
+
+augroup filetype_nerdtree
+    au!
+    au FileType nerdtree call s:disable_lightline_on_nerdtree()
+    au WinEnter,BufWinEnter,TabEnter * call s:disable_lightline_on_nerdtree()
+augroup END
+
+fu s:disable_lightline_on_nerdtree() abort
+    let nerdtree_winnr = index(map(range(1, winnr('$')), {_,v -> getbufvar(winbufnr(v), '&ft')}), 'nerdtree') + 1
+    call timer_start(0, {-> nerdtree_winnr && setwinvar(nerdtree_winnr, '&stl', '%#Normal#')})
+endfu
+
 
 autocmd BufRead .jscsrc set filetype=json
 autocmd BufRead .jshintrc set filetype=json
