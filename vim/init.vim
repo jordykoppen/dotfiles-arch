@@ -4,6 +4,7 @@ source $DOTFILES/vim/startify.vim
 source $DOTFILES/vim/coc.vim
 source $DOTFILES/vim/nerdtree.vim
 
+set encoding=UTF-8
 set termguicolors
 let ayucolor="dark"
 colorscheme ayu

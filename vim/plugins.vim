@@ -8,7 +8,8 @@ Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'yarisgutierrez/ayu-lightlinv'
+"Plug 'yarisgutierrez/ayu-lightline'
+Plug 'ryanoasis/vim-devicons'
 
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
