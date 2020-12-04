@@ -14,3 +14,7 @@ noremap so :so $MYVIMRC<CR>
 
 " FZF
 nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <C-r> :Rg<CR>
+
+" use ctrl-c to copy to clipboard register in visual mode
+vnoremap <C-c> "+y

@@ -4,6 +4,7 @@ SETUVAR --export DOTFILES:/home/jordy/dotfiles
 SETUVAR --export EDITOR:vim
 SETUVAR --export FZF_DEFAULT_COMMAND:rg\x20\x2d\x2dfiles
 SETUVAR --export FZF_DEFAULT_OPTS:\x2dm\x20\x2d\x2dheight\x2050\x25\x20\x2d\x2dborder
+SETUVAR --export GTK_THEME:Arc\x3adark
 SETUVAR --export GVM_ROOT:/home/jordy/\x2egvm
 SETUVAR --export N_PREFIX:/home/jordy/n
 SETUVAR --export --path PATH:/home/jordy/n/bin\x1e/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/local/sbin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl

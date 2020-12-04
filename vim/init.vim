@@ -28,8 +28,6 @@ set re=0
 " TextEdit might fail if hidden is not set.
 set hidden
 
-" use ctrl-c to copy to clipboard register in visual mode
-vnoremap <C-c> "+y
 
 " Some servers have issues with backup files, see #649.
 set nobackup
@@ -54,7 +52,7 @@ else
   set signcolumn=yes
 endif
 
-let g:fzf_layout = { 'down': '~20%' }
+" let g:fzf_layout = { 'down': '~20%' }
 
 let g:lightline = {
   \ 'colorscheme': 'ayu'
@@ -80,3 +78,16 @@ autocmd BufRead .eslintrc set filetype=json
 autocmd BufRead .prettierrc set filetype=json
 autocmd BufRead .tslintrc set filetype=json
 autocmd BufRead .dojorc set filetype=json
+
+highlight Comment cterm=italic
+hi link xmlEndTag xmlTag
+hi htmlArg gui=italic
+hi Comment gui=italic
+hi Type gui=italic
+hi jsxAttrib gui=italic
+hi htmlArg cterm=italic
+hi jsxAttrib cterm=italic
+hi Comment cterm=italic
+hi Type cterm=italic
+
+hi VertSplit guifg=#243340
