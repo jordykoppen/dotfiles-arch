@@ -52,11 +52,12 @@ else
   set signcolumn=yes
 endif
 
-" let g:fzf_layout = { 'down': '~20%' }
+" let g:fzf_layout = { 'window': 'enew' }
 
 let g:lightline = {
   \ 'colorscheme': 'ayu'
   \ }
+
 
 augroup filetype_nerdtree
     au!
