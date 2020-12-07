@@ -21,5 +21,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
+Plug 'justinmk/vim-sneak'
+
 call plug#end()
 

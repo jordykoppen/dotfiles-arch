@@ -43,6 +43,7 @@ let NERDTreeChDirMode=2
 " Start NERDTree in minimal UI mode (No help lines)
 let NERDTreeMinimalUI=1
 
+" Show hidden files by default
 let NERDTreeShowHidden=1
 
 augroup filetype_nerdtree

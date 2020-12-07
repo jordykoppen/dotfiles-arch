@@ -12,6 +12,9 @@ inoremap  jj <Esc>
 " Source Vim config
 noremap so :so $MYVIMRC<CR>
 
+map s <Plug>Sneak_s
+map S <Plug>Sneak_S
+
 " FZF
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <C-r> :Rg<CR>

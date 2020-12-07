@@ -2,6 +2,10 @@
 # wm independent hotkeys
 #
 
+# Make screenshot and copy to clipboard
+super + s
+  maim --hidecursor -s | xclip -selection clipboard -t image/png
+
 # terminal emulator
 super + Return
 	alacritty
