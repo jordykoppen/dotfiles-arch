@@ -1,4 +1,6 @@
 !# /bin/bash
 
 env &
+# Set cursor rate/repeat rate
+xset r rate 150 50 &
 $DOTFILES/wallpapers/scripts/random &

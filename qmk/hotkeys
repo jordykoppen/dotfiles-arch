@@ -1,0 +1,6 @@
+# Open floating keebsheet window
+super + z
+  kill -9 $(cat "/tmp/keebsheet.pid") || \
+  (bspc rule -a \* -o state=floating layer=above && \
+  feh $DOTFILES/qmk/keyboard-layout-joko.png --borderless --g 1252x442 --scale-down & \
+  echo "$!" > /tmp/keebsheet.pid)
