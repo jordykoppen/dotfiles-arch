@@ -20,4 +20,7 @@ echo $hotkeys
 echo "found ${#hotkeys[@]}"
 echo "starting sxhkdrc"
 
+echo "settings cursor speed"
+xset r rate 150 50
+
 sxhkd -c $DOTFILES/sxhkd/sxhkdrc $hotkeys

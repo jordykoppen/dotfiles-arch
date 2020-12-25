@@ -6,9 +6,9 @@
 
 config_version: 2
 settings:
-  colors.webpage.bg:
-    global: '#1B1C24'
   colors.webpage.darkmode.enabled:
+    global: false
+  colors.webpage.prefers_color_scheme_dark:
     global: true
   content.notifications:
     https://www.reddit.com: false
@@ -24,6 +24,8 @@ settings:
     global: New York
   fonts.web.family.standard:
     global: SF Pro Display
+  qt.highdpi:
+    global: true
   url.default_page:
     global: https://google.com/
   url.searchengines:
@@ -31,3 +33,5 @@ settings:
       DEFAULT: https://google.com/search?q={}
   url.start_pages:
     global: https://google.com/
+  zoom.default:
+    global: 100%
