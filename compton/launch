@@ -1,5 +1,8 @@
 #! /bin/sh
+source $DOTFILES/linux/log.sh
 
-killall compton
-
-compton -b --config $HOME/.config/compton/compton.conf
+log "Kill existing compton instance" &
+killall compton &
+log "Executing comton" &
+compton -b --config $HOME/.config/compton/compton.conf &
+log "Compton started" &

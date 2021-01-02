@@ -1,3 +1,6 @@
 #! /bin/bash
+source $DOTFILES/linux/log.sh
 
+log "Start" &
 vmware-user &
+log "Started" &

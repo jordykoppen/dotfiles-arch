@@ -4,7 +4,7 @@ configuration {
   show-icons: true;
   terminal: "kitty";
   run-shell-command: "{terminal}";
-  drun-icon-theme: "Papirus-Dark";
+  // drun-icon-theme: "Papirus-Dark";
   combi-modi: "drun";
   hide-scrollbar: true;
   window-format: "{t}";

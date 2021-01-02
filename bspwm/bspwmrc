@@ -1,4 +1,6 @@
 #! /bin/sh
+source $DOTFILES/linux/log.sh
+
 LOG_FILE="$HOME/.bspwm.log"
 exec 3>&1 1>${LOG_FILE} 2>&1
 
@@ -20,7 +22,7 @@ bspc config ignore_ewmh_focus	  true
 
 logins=$(find $DOTFILES -executable -type f -name login)
 
+log "Sourcing login scripts:"
 for login in $logins; do
-  echo "login script: $login"
   source $login
 done

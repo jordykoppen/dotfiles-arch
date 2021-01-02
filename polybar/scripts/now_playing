@@ -1,6 +1,6 @@
 #!/bin/sh
 
-s=$(playerctl status)
+s=(playerctl status)
 if [ $? -ne 0 ]
 then
     echo "Nothing is playing"

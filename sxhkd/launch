@@ -1,26 +1,26 @@
 #! /bin/sh
+source $DOTFILES/linux/log.sh
 
 # Trap output to also write to log
 LOG_FILE="$HOME/.sxhkd.log"
 exec 3>&1 1>${LOG_FILE} 2>&1
 
-echo "killing current sxhkd instance if exists"
+log "kill running sxhkd instances"
 # Terminate already running instances
 killall -q sxhkd
 
 # Wait until the processes have been shut down
-while pgrep -u $UID -x sxhkd >/dev/null; do sleep 1; echo "waiting for previous sxhkd to be shutdown..."; done
+while pgrep -u $UID -x sxhkd >/dev/null; do sleep 1; log "waiting for previous sxhkd instance to be shutdown..."; done
 
-echo "searching for hotkeys files"
-
-# Find all hotkey files and launch sxhkd
-hotkeys=$(find . -type f -name hotkeys)
-echo $hotkeys
-
-echo "found ${#hotkeys[@]}"
-echo "starting sxhkdrc"
-
-echo "settings cursor speed"
+log "xset cursor repeat rate"
 xset r rate 150 50
 
+log "search for hotkey files"
+hotkeys=$(find . -type f -name hotkeys)
+echo hotkeys
+for hk in $hotkeys; do
+  log "found $hk"
+done
+
+log "start sxhkd"
 sxhkd -c $DOTFILES/sxhkd/sxhkdrc $hotkeys
