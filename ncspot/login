@@ -4,8 +4,6 @@ source $DOTFILES/linux/log.sh
 if pgrep -x "ncspot" >/dev/null; then
   log "An instance of ncspot is already running."
 else
-  log "Wait for polybar process to prevent overlap"
-  wait (pidof polybar)
   log "Launching ncspot on Desktop 4"
   bspc rule -a "kitty" -o desktop="4" follow=off focus=off
   kitty -e fish -i -c ncspot &
