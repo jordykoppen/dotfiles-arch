@@ -23,5 +23,7 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 
 Plug 'justinmk/vim-sneak'
 
+Plug 'tpope/vim-surround'
+
 call plug#end()
 
